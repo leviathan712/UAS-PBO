@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PBODataSet2" targetNamespace="http://tempuri.org/PBODataSet2.xsd" xmlns:mstns="http://tempuri.org/PBODataSet2.xsd" xmlns="http://tempuri.org/PBODataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PBOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PBOConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.UAS_PBO.Properties.Settings.GlobalReference.Default.PBOConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Jadwal_KRSTableAdapter" GeneratorDataComponentClassName="Jadwal_KRSTableAdapter" Name="Jadwal_KRS" UserDataComponentName="Jadwal_KRSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PBOConnectionString (Settings)" DbObjectName="PBO.dbo.Jadwal_KRS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nama_Kelas, Jadwal, Sks, Semester FROM dbo.Jadwal_KRS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nama_Kelas" DataSetColumn="Nama_Kelas" />
+              <Mapping SourceColumn="Jadwal" DataSetColumn="Jadwal" />
+              <Mapping SourceColumn="Sks" DataSetColumn="Sks" />
+              <Mapping SourceColumn="Semester" DataSetColumn="Semester" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PBODataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PBODataSet2" msprop:Generator_DataSetName="PBODataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Jadwal_KRS" msprop:Generator_RowEvHandlerName="Jadwal_KRSRowChangeEventHandler" msprop:Generator_RowDeletedName="Jadwal_KRSRowDeleted" msprop:Generator_RowDeletingName="Jadwal_KRSRowDeleting" msprop:Generator_RowEvArgName="Jadwal_KRSRowChangeEvent" msprop:Generator_TablePropName="Jadwal_KRS" msprop:Generator_RowChangedName="Jadwal_KRSRowChanged" msprop:Generator_RowChangingName="Jadwal_KRSRowChanging" msprop:Generator_TableClassName="Jadwal_KRSDataTable" msprop:Generator_RowClassName="Jadwal_KRSRow" msprop:Generator_TableVarName="tableJadwal_KRS" msprop:Generator_UserTableName="Jadwal_KRS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nama_Kelas" msprop:Generator_ColumnPropNameInRow="Nama_Kelas" msprop:Generator_ColumnPropNameInTable="Nama_KelasColumn" msprop:Generator_ColumnVarNameInTable="columnNama_Kelas" msprop:Generator_UserColumnName="Nama_Kelas" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Jadwal" msprop:Generator_ColumnPropNameInRow="Jadwal" msprop:Generator_ColumnPropNameInTable="JadwalColumn" msprop:Generator_ColumnVarNameInTable="columnJadwal" msprop:Generator_UserColumnName="Jadwal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sks" msprop:Generator_ColumnPropNameInRow="Sks" msprop:Generator_ColumnPropNameInTable="SksColumn" msprop:Generator_ColumnVarNameInTable="columnSks" msprop:Generator_UserColumnName="Sks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Semester" msprop:Generator_ColumnPropNameInRow="Semester" msprop:Generator_ColumnPropNameInTable="SemesterColumn" msprop:Generator_ColumnVarNameInTable="columnSemester" msprop:Generator_UserColumnName="Semester" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
